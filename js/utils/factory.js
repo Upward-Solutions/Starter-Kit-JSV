@@ -7,7 +7,7 @@
  * En caso de que el código sea ERROR la data viene undefined.
  */
 
-const Response = (message, data, code) => {
+const _Response = (message, data, code) => {
     let Response = new Object()
     Response.code = code
     Response.message = message
@@ -25,9 +25,8 @@ const Response = (message, data, code) => {
  * En caso de que no sea requerida información la data viene undefined.
  */
 
-const Request = (message, data, endpoint, method) => {
+const _Request = (data, endpoint, method) => {
     let Request = new Object()
-    Request.message = message
     if (data) Request.data = data
     Request.endpoint = endpoint
     Request.method = method

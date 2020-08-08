@@ -6,12 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starter Kit Front-End</title>
 
+    <!-- LIBRARIES -->
+    <script src="js/utils/libraries/currency.min.js"></script>
+    <script src="js/utils/libraries/moment.min.js"></script>
+
     <!-- UTILS -->
     <script src="js/utils/constants.js"></script>
+    <script src="js/utils/factory.js"></script>
+    <script src="js/utils/generalFormat.js"></script>
+
+    <!-- VIES -->
+    <script src="js/views/index.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="js/controllers/index.js"></script>
+
+    <!-- MODELS -->
+    <script src="js/models/index.js"></script>
 </head>
 
 <body>
-    <h3>{{ FULL_COMPANY_NAME }}</h3>
+    <h1>Starter Kit</h1>
+    <span>
+        Este proyecto contiene lo necesario para comenzazr un proyecto de
+        <strong>Front-end</strong> utilizando <i>Javascript Vanilla</i>.
+    </span>
+    <form id="test-form">
+        <legend>Nuevo usuario</legend>
+        <label for="text">Un texto cualquiera</label>
+        <!-- Los input se nombran así funcionalidad(camelCase)-type-nombre -->
+        <input type="text" name="newUser-text-name" placeholder="Un input de texto">
+        <label for="email">Un email</label>
+        <input type="email" name="newUser-email-email" placeholder="Un input de email">
+        <label for="number">Un número</label>
+        <input type="number" name="newUser-number-passport" placeholder="Un input de números">
+        <label for="textarea">Un mensaje</label>
+        <textarea name="newUser-textarea-message" cols="30" rows="10"></textarea>
+        <label for="checkbox">Términos y condiciones</label>
+        <input type="checkbox" name="newUser-checkbox-legal" id="">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Es importante que este import se haga al final del documento -->
+    <script src="js/utils/events.js"></script>
 </body>
 
 </html>
