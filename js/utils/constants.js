@@ -6,9 +6,9 @@ const SHORT_COMPANY_NAME = 'Upward';
 
 /* Location */
 
-const isMobile = screen.width < 800
-const url = document.location.pathname
-const isIndex = url.includes('index')
+const IS_MOBILE = screen.width < 800
+const CURRENT_URL = document.location.pathname
+const IS_INDEX = url.includes('index')
 
 
 /* DOM Functions */
@@ -84,7 +84,7 @@ const isValid = data => {
 }
 
 
-/* Global */
+/* Math */
 
 const randomInt = (min, max) => parseInt(Math.random() * max) + min
 
