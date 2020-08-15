@@ -1,6 +1,3 @@
-import currency from './libraries/currency.min'
-import moment from './libraries/moment.min'
-
 /* Date */
 
 const getShortDate = date => moment(new Date(date)).format('DD/MM/YYYY');
@@ -23,7 +20,7 @@ const PESOS = value =>
         separator: ".",
     });
 
-    createEventscreateEventsexport default {
+export default {
     getShortDate,
     getFullCurrentDate,
     DOLAR,

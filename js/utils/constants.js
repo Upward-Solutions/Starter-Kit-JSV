@@ -1,3 +1,5 @@
+import format from './generalFormat.js'
+
 /* Custom */
 
 export const FULL_COMPANY_NAME = 'Upward web and digital solutions';
