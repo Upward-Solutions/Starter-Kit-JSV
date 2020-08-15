@@ -21,25 +21,33 @@ const FULL_CURRENT_DATE = () => {
 
 /* Parse */
 
-const DOLAR = value =>
+const USD = value =>
     currency(value, {
         symbol: "USD ",
         decimal: ",",
         separator: ".",
-    });
+    }).format();
 
-const PESOS = value =>
+const ARS = value =>
     currency(value, {
         symbol: "ARS ",
         decimal: ",",
         separator: ".",
-    });
+    }).format();
+
+const IMPORT = value =>
+    currency(value, {
+        symbol: "",
+        decimal: ",",
+        separator: ".",
+    }).format();
 
 export default {
     SHORT_DATE,
     SHORT_CURRENT_DATE,
     FULL_DATE,
     FULL_CURRENT_DATE,
-    DOLAR,
-    PESOS
+    USD,
+    ARS,
+    IMPORT
 }
