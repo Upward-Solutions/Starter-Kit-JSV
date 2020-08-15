@@ -1,4 +1,8 @@
-const fetchData = (request) => {
+import { _Response } from '../utils/factory.js'
+import { API_URL, GENERAL_ERROR } from '../utils/constants.js'
+
+
+export const fetchData = (request) => {
     let response
     fetch(`${API_URL}/${request.endpoint}`, {
         method: request.method,
@@ -13,6 +17,7 @@ const fetchData = (request) => {
     })
         .then(res => {
             if (!res.ok) {
+                response = _Response('Network response was not ok', {}, GENERAL_ERROR)
                 throw new Error('Network response was not ok');
             }
             return res.json();
@@ -23,4 +28,8 @@ const fetchData = (request) => {
         .catch(error => {
             throw new Error('There has been a problem with your fetch operation:', error);
         });
+    if (!response) {
+        response = _Response('Network response was not ok', {}, GENERAL_ERROR)
+    }
+    return response
 }

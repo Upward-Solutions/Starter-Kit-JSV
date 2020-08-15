@@ -1,7 +1,10 @@
+import currency from './libraries/currency.min'
+import moment from './libraries/moment.min'
+
 /* Date */
 
 const getShortDate = date => moment(new Date(date)).format('DD/MM/YYYY');
-const FULL_CURRENT_DATE = moment(new Date()).format('dd:mm:yyyy LLL')
+const getFullCurrentDate = () => moment(new Date()).format('dd:mm:yyyy LLL')
 
 
 /* Parse */
@@ -19,3 +22,10 @@ const PESOS = value =>
         decimal: ",",
         separator: ".",
     });
+
+    createEventscreateEventsexport default {
+    getShortDate,
+    getFullCurrentDate,
+    DOLAR,
+    PESOS
+}
