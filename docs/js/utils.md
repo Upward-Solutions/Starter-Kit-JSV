@@ -21,3 +21,7 @@
 ## Libraries
 
 > Aquí se encuentran los archivos minificados de todas las librerías externas utilizadas.
+
++ Documentación de las librerías 
+    -   [Currency](https://currency.js.org/)
+    -   [Moment](https://momentjs.com/docs/)
