@@ -6,7 +6,7 @@ import {
 } from '../utils/constants.js'
 import createNewUser from '../controllers/index.js'
 
-export const newUserForm = async (event) => {
+const newUserForm = async (event) => {
     event.preventDefault()
     let inputs = getInputsFromForm(event.target)
     let data = createData(inputs)
@@ -19,3 +19,5 @@ export const setUser = response => {
         //create new HTML with backend data
     }
 }
+
+export default newUserForm;

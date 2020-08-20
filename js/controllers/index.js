@@ -1,4 +1,7 @@
-import { createNewUser } from './NewUser.js'
+import createNewUser from './NewUser.js'
+import exampleSwapi from './Swapi.js'
 
-
-export default createNewUser
+export default { 
+    createNewUser,
+    exampleSwapi,
+}
