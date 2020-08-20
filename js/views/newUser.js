@@ -11,10 +11,11 @@ export const newUserForm = async (event) => {
     let inputs = getInputsFromForm(event.target)
     let data = createData(inputs)
     let response = await createNewUser(data)
+    showNotification(response.message, response.code)
+}
 
+export const setUser = response => {
     if (response.code !== ERROR_CODE) {
         //create new HTML with backend data
     }
-    showNotification(response.message, response.code)
-
 }
