@@ -18,10 +18,13 @@
 
 > En este archivo comienza el flujo de ida y vuelta desde el frontend hasta el backend. Este archivo tiene la intención de liberar de código al HTML para hacerlo más mantenible y además mejora la performance. No se deben desarrollar funcionalidades en este archivo, solo asociar eventos del `DOM` con funciones de las `Views`.
 
-## Libraries
+## Plugins
 
-> Aquí se encuentran los archivos minificados de todas las librerías externas utilizadas.
+> Acá vas a encontrar modulos independientes, en los que están implementados las librerías. Algunas de las cosas que ofrecen las librerías ya están resueltas y con ejemplos. Todas están importadas en el `HTML` y podés hacer una prueba de cada uno de sus métodos y hasta podés agregar o sacar funciones. Cualquier plugin que no te vaya a servir, simplemente borrá la carpeta y el import del `HTML` y listo.
 
-+ Documentación de las librerías 
-    -   [Currency](https://currency.js.org/)
-    -   [Moment](https://momentjs.com/docs/)
+- Documentación de las librerías
+  - [Currency](https://currency.js.org/)
+  - [Moment](https://momentjs.com/docs/)
+  - [SweetAlert](https://sweetalert.js.org/guides/)
+  - [Chart](https://www.chartjs.org/docs/latest/)
+  - [Popper](https://popper.js.org/docs/v2/)

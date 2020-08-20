@@ -6,7 +6,7 @@ const getExampleSwapi = () => {
 }
 
 export const setSwapiView = (data) => {
-    showNotification(data.message, data.code)
+    showNotification(data.code, data.message)
     if (data.code === SUCCES_CODE) {
         console.log(data);
     }
