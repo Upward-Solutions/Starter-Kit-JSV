@@ -4,13 +4,13 @@ import {
     showNotification,
     ERROR_CODE
 } from '../utils/constants.js'
-import createNewUser from '../controllers/index.js'
+import controllers from '../controllers/index.js'
 
 const newUserForm = async (event) => {
     event.preventDefault()
     let inputs = getInputsFromForm(event.target)
     let data = createData(inputs)
-    let response = await createNewUser(data)
+    let response = await controllers.createNewUser(data)
     showNotification(response.message, response.code)
 }
 
