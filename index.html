@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- LIBRARIES -->
     <script src="./js/utils/plugins/currency/currency.min.js"></script>
@@ -11,35 +10,69 @@
     <script src="./js/utils/plugins/sweetAlert/sweetalert.min.js"></script>
     <script src="./js/utils/plugins/chart/chart.min.js"></script>
     <script src="./js/utils/plugins/popper/popper.min.js"></script>
-    
-    <title>Starter Kit Front-End</title>
-</head>
+    <link rel="stylesheet" href="./js/utils/plugins/loader/loaders.min.css" />
 
-<body>
+    <title>Starter Kit Front-End</title>
+  </head>
+
+  <body>
     <h1>Starter Kit</h1>
     <span>
-        Este proyecto contiene lo necesario para comenzazr un proyecto de
-        <strong>Front-end</strong> utilizando <i>Javascript Vanilla</i>.
+      Este proyecto contiene lo necesario para comenzazr un proyecto de
+      <strong>Front-end</strong> utilizando <i>Javascript Vanilla</i>.
     </span>
     <form id="test-form">
-        <legend>Nuevo usuario</legend>
-        <label for="text">Un texto cualquiera</label>
-        <!-- Los input se nombran así funcionalidad(camelCase)-type-nombre -->
-        <input type="text" name="newUser-text-name" placeholder="Un input de texto">
-        <label for="email">Un email</label>
-        <input type="email" name="newUser-email-email" placeholder="Un input de email">
-        <label for="number">Un número</label>
-        <input type="number" name="newUser-number-passport" placeholder="Un input de números">
-        <label for="textarea">Un mensaje</label>
-        <textarea name="newUser-textarea-message" cols="30" rows="10"></textarea>
-        <label for="checkbox">Términos y condiciones</label>
-        <input type="checkbox" name="newUser-checkbox-legal" id="">
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
+      <h2>Nuevo usuario</h2>
+      <label for="text">Un texto cualquiera</label>
+      <!-- Los input se nombran así funcionalidad(camelCase)-type-nombre -->
+      <input
+        type="text"
+        name="newUser-text-name"
+        placeholder="Un input de texto"
+      />
+      <label for="email">Un email</label>
+      <input
+        type="email"
+        name="newUser-email-email"
+        placeholder="Un input de email"
+      />
+      <label for="number">Un número</label>
+      <input
+        type="number"
+        name="newUser-number-passport"
+        placeholder="Un input de números"
+      />
+      <label for="textarea">Un mensaje</label>
+      <textarea name="newUser-textarea-message" cols="30" rows="10"></textarea>
+      <label for="checkbox">Términos y condiciones</label>
+      <input type="checkbox" name="newUser-checkbox-legal" id="" />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
     </form>
 
-    <button id="swapi-example">Example succes</button>
+    <h2>Swapi Example</h2>
+    <div class="async-content" id="example-swapi">
+      <!-- Este es un ejemplo de contenido que se imprime luego de una acción y que debe ser esperado.
+        Para mejorar la experiencia se agrega un loader. Este tiene la siguiente estructura: 
+        Action (que solicita el contenido)
+        Loader (que se muestra mientras se está esperando el contenido)
+        Content (el contenido propiamente dicho)
+      -->
+      <div class="action">
+        <button id="swapi-example">Get Person</button>
+      </div>
+      <div class="loader ball-beat" hidden>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="content" hidden>
+        <p id="name"></p>
+        <p id="gender"></p>
+        <p id="hair-color"></p>
+        <p>Para concoer más, revisá la consola.</p>
+      </div>
+    </div>
     <script type="module" src="js/index.js"></script>
-</body>
-
+  </body>
 </html>

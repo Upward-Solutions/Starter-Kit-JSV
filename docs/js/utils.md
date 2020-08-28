@@ -28,3 +28,4 @@
   - [SweetAlert](https://sweetalert.js.org/guides/)
   - [Chart](https://www.chartjs.org/docs/latest/)
   - [Popper](https://popper.js.org/docs/v2/)
+  - [Loader](https://github.com/ConnorAtherton/loaders.css)
