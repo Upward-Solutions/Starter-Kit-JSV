@@ -1,1 +1,1 @@
-# Starter-Kit-JSV
+# Starter-Kit-JS-Vanilla
